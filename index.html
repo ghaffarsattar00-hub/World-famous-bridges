@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World's Famous Bridges</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <nav class="fixed w-full z-50 top-0 bg-white/90 backdrop-blur-md shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#" class="text-xl font-bold text-blue-900 flex items-center gap-2">
+                    <i class="fas fa-bridge"></i> Famous Bridges
+                </a>
+                
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                    <a href="#about" class="hover:text-blue-600 transition">About</a>
+                    <a href="#gallery" class="hover:text-blue-600 transition">Gallery</a>
+                    <a href="#bridges" class="hover:text-blue-600 transition">Famous Bridges</a>
+                    <a href="#contact" class="hover:text-blue-600 transition">Contact Us</a>
+                </div>
+
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-xl text-slate-700">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4 space-y-3 shadow-lg">
+            <a href="#home" class="block hover:text-blue-600">Home</a>
+            <a href="#about" class="block hover:text-blue-600">About</a>
+            <a href="#gallery" class="block hover:text-blue-600">Gallery</a>
+            <a href="#bridges" class="block hover:text-blue-600">Famous Bridges</a>
+            <a href="#contact" class="block hover:text-blue-600">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen w-full overflow-hidden">
+        <div id="carousel" class="relative h-full w-full">
+            <div class="absolute inset-0 transition-opacity duration-1000 opacity-100 slide">
+                <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?q=80&w=1920&auto=format&fit=crop" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center text-white px-4">
+                    <div>
+                        <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg">Golden Gate Bridge</h1>
+                        <p class="text-xl md:text-2xl font-light">The iconic symbol of San Francisco.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
+                <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1920&auto=format&fit=crop" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center text-white px-4">
+                    <div>
+                        <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg">Tower Bridge</h1>
+                        <p class="text-xl md:text-2xl font-light">A masterpiece of Victorian engineering.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-0 transition-opacity duration-1000 opacity-0 slide">
+                <img src="https://downtownny.com/wp-content/uploads/2023/12/120423_bkbridge_1024x576.jpg" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center text-white px-4">
+                    <div>
+                        <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg">Brooklyn Bridge</h1>
+                        <p class="text-xl md:text-2xl font-light">Connecting Manhattan and Brooklyn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-slate-900 mb-6 relative inline-block after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-16 after:h-1 after:bg-blue-600">Connecting Worlds</h2>
+                <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                    Bridges are more than just structures; they are symbols of human ingenuity. From ancient stone arches to modern steel giants, they overcome natural barriers and unite distant shores.
+                </p>
+                <div class="flex gap-4">
+                    <div class="bg-blue-50 p-4 rounded-lg text-center w-1/2">
+                        <h3 class="font-bold text-2xl text-blue-600">50+</h3>
+                        <p class="text-sm text-slate-600">Iconic Bridges</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg text-center w-1/2">
+                        <h3 class="font-bold text-2xl text-blue-600">100+</h3>
+                        <p class="text-sm text-slate-600">Years of History</p>
+                    </div>
+                </div>
+            </div>
+            <img src="https://airial.travel/_next/image?url=https%3A%2F%2Fcoinventmediastorage.blob.core.windows.net%2Fmedia-storage-container%2Fgphoto_ChIJz8Th2v0Vsz4R0bhxn8vh9Zw_0.jpg&w=3840&q=70" alt="Bridge" class="rounded-2xl shadow-2xl hover:scale-[1.02] transition duration-500">
+        </div>
+    </section>
+
+    <section id="gallery" class="py-24 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-4xl font-bold text-slate-900 mb-4">Gallery</h2>
+            <p class="text-slate-600">Click to expand wonderful views.</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64" onclick="openModal(this.children[0].src)">
+                <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=600" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white font-bold">View</div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64" onclick="openModal(this.children[0].src)">
+                <img src="https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/royal/ports-and-destinations/destinations/british-isles/view-visiting-famous-millennium-bridge-london-uk.jpg?$1440x810$" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white font-bold">View</div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64" onclick="openModal(this.children[0].src)">
+                <img src="https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/royal/ports-and-destinations/destinations/italy/view-visiting-famous-ponte-vecchio-bridge-florence-italy.jpg?$1440x810$" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white font-bold">View</div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64" onclick="openModal(this.children[0].src)">
+                <img src="https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/royal/data/ports/sydney-australia/overview/sydney-australia-harbour-bridge.jpg?$1440x810$" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white font-bold">View</div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64" onclick="openModal(this.children[0].src)">
+                <img src="https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/royal/2024-editorial-assets/tokyo-gate-bridge.jpg?$1440x810$" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white font-bold">View</div>
+            </div>
+            <div class="group relative overflow-hidden rounded-xl shadow-lg cursor-pointer h-64" onclick="openModal(this.children[0].src)">
+                <img src="https://www.albomadventures.com/wp-content/uploads/2023/01/Vietnam-Danang-Golden-bridge-Depositphotos_445999838_L.jpg" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center text-white font-bold">View</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bridges" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-slate-900 mb-12">Famous Bridges</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100">
+                    <img src="https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=600" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Golden Gate</h3>
+                        <p class="text-slate-500 text-sm mb-4"><i class="fas fa-map-marker-alt text-red-500 mr-2"></i>USA</p>
+                        <button class="w-full py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition font-semibold">Learn More</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100">
+                    <img src="https://assets.dm.rccl.com/is/image/RoyalCaribbeanCruises/royal/ports-and-destinations/destinations/british-isles/view-visiting-famous-tower-bridge-london-uk.jpg?$1440x810$" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tower Bridge</h3>
+                        <p class="text-slate-500 text-sm mb-4"><i class="fas fa-map-marker-alt text-red-500 mr-2"></i>UK</p>
+                        <button class="w-full py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition font-semibold">Learn More</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border border-slate-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhgjpvKSR8ojWt-ApkXz3FzG68qmO4288d2Q&s" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Brooklyn Bridge</h3>
+                        <p class="text-slate-500 text-sm mb-4"><i class="fas fa-map-marker-alt text-red-500 mr-2"></i>USA</p>
+                        <button class="w-full py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-600 hover:text-white transition font-semibold">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 bg-slate-50">
+        <div class="max-w-xl mx-auto px-6 bg-white p-10 rounded-2xl shadow-xl border border-slate-100">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-slate-900">Get In Touch</h2>
+                <p class="text-slate-500 mt-2">Have questions about these bridges? Drop us a message!</p>
+            </div>
+
+            <form class="space-y-6">
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-2">Full Name</label>
+                    <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
+                    <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-slate-700 mb-2">Your Message</label>
+                    <textarea rows="5" placeholder="Write your message here..." class="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:bg-white transition resize-none"></textarea>
+                </div>
+                <button class="w-full py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 hover:shadow-lg transition transform hover:-translate-y-1">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-10 text-center">
+        <div class="container mx-auto">
+            <h3 class="text-white font-bold text-xl mb-4">Famous Bridges</h3>
+            
+            <div class="flex justify-center items-center space-x-6 mb-6">
+                <a href="#" class="text-2xl hover:text-blue-500 transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                
+                <a href="https://www.instagram.com/a_b_d_u_l_ghaffar/" target="_blank" class="hover:scale-110 transition duration-300">
+                    <img src="a_b_d_u_l_ghaffar_qr.png" alt="Abdul Ghaffar Instagram" class="w-16 h-16 rounded-lg border-2 border-pink-500 object-contain bg-white">
+                </a>
+            </div>
+            
+            <p>&copy; 2026 Famous Bridges. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="fixed inset-0 z-[100] bg-black/95 hidden flex items-center justify-center p-4 cursor-pointer" onclick="this.classList.add('hidden')">
+        <img id="modal-img" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl border-2 border-white/20">
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        setInterval(() => {
+            slides[slideIndex].classList.replace('opacity-100', 'opacity-0');
+            slideIndex = (slideIndex + 1) % slides.length;
+            slides[slideIndex].classList.replace('opacity-0', 'opacity-100');
+        }, 4000);
+
+        function openModal(src) {
+            document.getElementById('modal-img').src = src;
+            document.getElementById('modal').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
